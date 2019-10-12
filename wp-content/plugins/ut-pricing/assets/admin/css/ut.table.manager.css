@@ -1,0 +1,218 @@
+/* tabs navigation */
+.ut-table-tabs {
+	position: relative;
+}
+
+.ut-table-tabs-nav {
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	position:relative;
+}
+
+.ut-table-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px 1px 0 0;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 0;
+	white-space: nowrap;
+	line-height:30px;
+}
+
+.ut-table-tabs-nav li a {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+.ut-table-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ut-table-tabs-nav li.ui-tabs-active a, 
+.ut-table-tabs-nav li.ui-state-disabled a, 
+.ut-table-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+}
+.ut-table-tabs-nav li a {
+	cursor: pointer;
+} 
+
+.ut-table-tabs .ui-tabs-panel {
+	display: block;
+	padding: 1em;
+	background:#222;
+}
+
+.ut-table-tabs .ui-state-default {
+	color: #BBBBBB;
+	font-weight: normal;
+	background: #333;
+}
+
+.ui-state-default a {
+	color: #666;
+}
+
+.ut-table-tabs .ui-state-hover, 
+.ut-table-tabs .ui-state-focus {
+	color: #58626a;
+	font-weight: normal;
+	background: #f0f2f5;
+}
+
+.ut-table-tabs .ui-state-hover a, 
+.ut-table-tabs .ui-state-focus a {
+	color: #58626a;
+}
+
+.ut-table-tabs .ui-state-active {	
+	color: #FFF;
+	font-weight: normal;
+	background: #222;
+	
+}
+
+.ut-table-tabs .ui-state-active a {
+	color: #47CADE;
+	outline:none;
+}
+
+/* table styles */
+.ut-table-tabs .form-table th {
+	font-weight: normal !important;
+	color:#BBBBBB;
+}
+.ut-table-tabs .form-table td {
+	background:#FFF;
+}
+
+.ut-table-tabs h1 span {
+	color: #666;
+}
+
+
+/* form styles */
+.ut-checkbox {
+	width: 75px;
+	height: 24px;
+	background: #FAFAFA;
+	position: relative;
+	border: 1px solid #DDDDDD;
+	line-height: 24px;
+	margin-bottom:0px !important;
+	font-weight: bold;
+}
+
+.ut-checkbox:after {
+	content: 'off';
+	color:  #666;
+	position: absolute;
+	right: 12px;
+	top:0px;
+	z-index: 0;
+}
+
+.ut-checkbox:before {
+	content: 'on';
+	color: #0192D4;
+	position: absolute;
+	left: 12px;
+	top:0px;
+	z-index: 0;
+}
+
+.ut-checkbox label {
+	display: block;
+	width: 34px;
+	height: 22px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	
+	cursor: pointer;
+	position: absolute;
+	top: 1px;
+	height: 22px;
+	left: 1px;
+	z-index: 1;
+	background: #bdc3c7;
+}
+
+.ut-checkbox input {
+	visibility:hidden;
+}
+
+.ut-checkbox input[type=checkbox]:checked + label {
+	left: 40px;
+	background:#0192D4;
+}
+
+
+.ut-checkbox-single {
+	width: 20px;
+	height: 20px;
+	display:block;
+	position: relative;
+	margin-bottom:10px;
+}
+
+.ut-checkbox-single input {
+	display:none;
+}
+
+.ut-checkbox-single label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	background: #bdc3c7;
+	line-height: 20px;
+    text-indent: 30px;
+	white-space: nowrap;
+}
+
+.ut-checkbox-single label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #FFF;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.ut-checkbox-single label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.ut-checkbox-single input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.ut-checkbox-single input[type=checkbox]:checked + label {
+	background: #0192D4;
+}

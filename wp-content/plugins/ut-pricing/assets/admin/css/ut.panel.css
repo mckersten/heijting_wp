@@ -1,0 +1,11 @@
+.ut-shortcode-label {
+	background-color: #428BCA;
+    color: #FFFFFF;
+    display: inline;
+    line-height: 1;
+    padding: 2px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}

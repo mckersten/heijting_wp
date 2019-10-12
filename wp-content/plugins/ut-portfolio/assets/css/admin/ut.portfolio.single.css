@@ -1,0 +1,9 @@
+/* no supported portfolio post formats */
+#post-format-quote,
+.post-format-quote,
+#post-format-link,
+.post-format-link,
+#post-format-image,
+.post-format-image {
+	display:none !important;
+}

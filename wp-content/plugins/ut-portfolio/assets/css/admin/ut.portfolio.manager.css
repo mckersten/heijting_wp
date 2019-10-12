@@ -1,0 +1,265 @@
+@import "ut.jqueryui.css";
+
+/* overwrite WordPress UI */
+#post-body-content {
+	margin-bottom:20px;
+}
+
+#ut-portfolio-manager {
+
+	background: #FFF !important;
+	border-radius: 0px !important;
+	border: none !important;
+}
+
+#ut-portfolio-manager .hndle {
+
+	background: #FAFAFA !important;
+	font-family: "Open Sans",sans-serif !important;
+	border: 1px solid #DDDDDD;
+    border-radius: 0 0 0 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	
+}
+
+#ut-portfolio-manager .handlediv {
+	margin-top: 3px;
+}
+
+#ut-portfolio-manager .inside {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+#ut-portfolio-manager {
+	font-family: "Open Sans",sans-serif;
+}
+
+
+/* custom styles */
+#ut_showcase_options {
+    display:none;
+}
+
+.ut-section-title {
+    color: #666;
+    display: block;
+    font-size: 13px;
+    min-width: 160px;
+    padding: 10px 10px 10px 0;
+    text-indent: 10px;
+	border: 1px solid #DDD;
+	border-bottom: none;
+	background: #FAFAFA;
+	font-weight: bold;
+}
+
+.ut-section-panel {
+	background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+    padding: 18px;
+    position: relative;	
+}
+
+
+
+/* form styles */
+.ut-checkbox {
+	width: 75px;
+	height: 24px;
+	background: #FAFAFA;
+	position: relative;
+	border: 1px solid #DDDDDD;
+	line-height: 24px;
+	margin-bottom:10px;
+	font-weight: bold;
+}
+
+.ut-checkbox:after {
+	content: 'off';
+	color:  #666;
+	position: absolute;
+	right: 12px;
+	top:0px;
+	z-index: 0;
+}
+
+.ut-checkbox:before {
+	content: 'on';
+	color: #0192D4;
+	position: absolute;
+	left: 12px;
+	top:0px;
+	z-index: 0;
+}
+
+.ut-checkbox label {
+	display: block;
+	width: 34px;
+	height: 22px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	
+	cursor: pointer;
+	position: absolute;
+	top: 1px;
+	height: 22px;
+	left: 1px;
+	z-index: 1;
+	background: #bdc3c7;
+}
+
+.ut-checkbox input {
+	visibility:hidden;
+}
+
+.ut-checkbox input[type=checkbox]:checked + label {
+	left: 40px;
+	background:#0192D4;
+}
+
+
+.ut-checkbox-single {
+	width: 20px;
+	height: 20px;
+	display:block;
+	position: relative;
+	margin-bottom:10px;
+}
+
+.ut-checkbox-single input {
+	display:none;
+}
+
+.ut-checkbox-single label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	background: #bdc3c7;
+	line-height: 20px;
+    text-indent: 30px;
+	white-space: nowrap;
+}
+
+.ut-checkbox-single label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #FFF;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.ut-checkbox-single label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.ut-checkbox-single input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.ut-checkbox-single input[type=checkbox]:checked + label {
+	background: #0192D4;
+}
+
+/* elements */
+.ut-cropping-size {
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+
+.ut-cropping-size label {
+    margin-right: 5px;
+}
+
+.ut-cropping-size input {
+    margin-right:10px;
+}
+
+.ut-shortcode-code {
+	background-color: #0192D4;
+    color: #FFFFFF;
+	font-size: 12px;
+    display: inline;
+    line-height: 1;
+    padding: 2px;
+    text-align: center;
+    vertical-align: baseline;
+	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+
+/* range slider */
+.ut-range-slider-group {
+	width:250px;
+	position: relative;
+	margin-bottom:20px;
+}
+
+.ut-opacity-slider {
+	width:200px;
+	position:absolute;
+	top:4px;
+}
+
+.ut-opacity-value {
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    float: right;
+    height: 16px;
+    line-height: 16px;
+    padding: 2px;
+}
+
+.ut-hidden-slider-input {
+	display: none;
+}
+
+/* sortable taxonomies */
+#ut-sortable-tax .ut-handle {
+	display: block;
+    float: left;
+	width: 20px;
+	height: 20px;
+	text-align:center;
+	background:#77BE32;
+	color:#FFF;
+	cursor:pointer;
+	margin-right:2px;
+}
+
+#ut-sortable-tax .ut-checkbox-single {
+	float:left;
+}
+
+#ut-sortable-tax .ut-handle-highlight {
+	background:#D3EDBA;
+	width:250px;
+	height:20px;
+}
